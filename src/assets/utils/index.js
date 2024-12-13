@@ -11,9 +11,8 @@ import highlightFourthmv from "/assets/videos/hightlight-fourth.mp4";
 import exploremv from "/assets/videos/explore.mp4";
 import framemv from "/assets/videos/frame.mp4";
 
-import apple from "/assets/images/apple.svg";
+import apple from "/assets/images/apple.png";
 import search from "/assets/images/search.svg";
-import bag from "/assets/images/bag.svg";
 import watch from "/assets/images/watch.svg";
 import right from "/assets/images/right.svg";
 import replay from "/assets/images/replay.svg";
@@ -40,7 +39,6 @@ export const frameVideo = framemv;
 
 export const appleImg = apple;
 export const searchImg = search;
-export const bagImg = bag;
 export const watchImg = watch;
 export const rightImg = right;
 export const replayImg = replay;

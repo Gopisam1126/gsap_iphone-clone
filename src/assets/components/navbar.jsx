@@ -1,8 +1,17 @@
 import "../compStyles/navbar.css";
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import SearchIcon from '@mui/icons-material/Search';
+import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
+import SearchIcon from "@mui/icons-material/Search";
 function Navbar() {
-  const navItems = ["iPhone", "iPad", "Mac", "Tablets", "Store", "Accessories", "Support", "Airpods"];
+  const navItems = [
+    "iPhone",
+    "iPad",
+    "Mac",
+    "Tablets",
+    "Store",
+    "Accessories",
+    "Support",
+    "Airpods",
+  ];
 
   return (
     <>
@@ -21,8 +30,20 @@ function Navbar() {
             ))}
           </div>
           <div className="action-icons">
-            <SearchIcon/>
-            <ShoppingBagIcon/>
+            <SearchIcon
+              style={{
+                cursor: "pointer",
+                opacity: "0.6",
+              }}
+              className="search-icon"
+            />
+            <ShoppingBagIcon
+              style={{
+                cursor: "pointer",
+                opacity: "0.6",
+              }}
+              className="search-icon"
+            />
           </div>
         </nav>
       </header>
