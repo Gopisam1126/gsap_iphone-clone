@@ -1,0 +1,26 @@
+.navbar-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+}
+.navbar, .nav-items, .action-icons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 3rem;
+}
+#apple-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+.nav-i-li {
+    list-style: none;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.nav-i-li:hover {
+    opacity: 1;
+}
