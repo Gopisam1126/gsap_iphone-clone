@@ -10,6 +10,12 @@ function Hero() {
       delay: 2,
       duration: 2,
     });
+    gsap.to('#cta', {
+      opacity: 1,
+      delay: 2,
+      duration: 1,
+      y: -5,
+    })
   }, []);
 
   return (
@@ -30,6 +36,12 @@ function Hero() {
               <source src={heroVideo} type="video/mp4" />
             </video>
           </div>
+        </div>
+        <div id="cta">
+          <div className="bl-c">
+            <a href="#highlights" className="buy-link">Buy</a>
+          </div>
+          <p className="cta-b-desc">From $199/Month or $999</p>
         </div>
       </section>
     </>
