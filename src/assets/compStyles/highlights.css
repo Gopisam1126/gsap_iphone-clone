@@ -1,0 +1,34 @@
+body {
+    overflow-x: hidden;
+}
+.hl-main-sec {
+    width: 100%;
+    /* overflow-x: hidden; */
+    height: 100%;
+    padding: 1rem 7rem;
+    background: rgb(29, 29, 31);
+}
+.hl-main-c {
+    max-width: 100%;
+}
+#main-head {
+    font-size: 3rem;
+    margin-top: 7rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(70px);
+}
+.hl-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+.watch-filim-link {
+    display: flex;
+    align-items: center;
+    color: #2997FF;
+    opacity: 0;
+    transform: translateY(70px);
+}
