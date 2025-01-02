@@ -28,6 +28,11 @@ function VideoCarousal() {
   const { isEnd, isLastVideo, startPlay, videoId, isPlaying } = video;
 
   useGSAP(() => {
+    gsap.to("#slider", {
+      transform: `translateX(${-100 * videoId}%)`,
+      duration: 2,
+      ease: "power2.inOut",
+    });
 
     gsap.to("#video", {
       scrollTrigger: {
@@ -147,14 +152,18 @@ function VideoCarousal() {
       <div className="vc-main-c">
         {hightlightsSlides.map((slide, i) => (
           <div key={slide.id} id="slider">
-            <div className="video-carousal_container">
-              <div className="video-c">
+            <div className={`video-carousal_container ${
+                  slide.id === 2 && "translate-x-44"
+                } pointer-events-none`}>
+              <div
+                className={`video-c `}
+              >
                 <video
                   id="video"
                   muted
                   playsInline={true}
                   preload="auto"
-                  className="video-i"
+                  className={`video-i`}
                   key={slide.video}
                   ref={(elem) => (videoRef.current[i] = elem)}
                   onEnded={() =>

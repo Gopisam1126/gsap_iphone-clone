@@ -2,10 +2,10 @@
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  gap: 10px;
+  gap: 2rem;
 }
 .video-carousal-slide {
-  width: 80vw;
+  width: 100rem;
   height: 35vh;
   flex-shrink: 0;
 }
@@ -13,15 +13,17 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 20rem;
+  height: 30rem;
   border-radius: 1.5rem;
   overflow: hidden;
   background: #000;
 }
 .video-i {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.translate-x-44 {
+  transform: translateX(15rem);
 }
 .text-container {
   position: relative;
@@ -56,7 +58,7 @@
   height: 0.75rem;
   cursor: pointer;
   background: #e5e7eb;
-  border-radius: 20%;
+  border-radius: 25%;
 }
 .prg-act-btn {
   background: rgba(66, 66, 69, 0.7);
@@ -67,3 +69,7 @@
   padding: 0.45rem 0.4rem;
   margin-left: 1.2rem;
 }
+/* #slider {
+  width: 80rem;
+  height: 35rem;
+} */
