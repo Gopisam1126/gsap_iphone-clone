@@ -1,0 +1,65 @@
+.model-main-section {
+    padding: 5rem 10rem;
+}
+.model-sec-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(5rem);
+    color: rgb(189, 189, 189);
+}
+.model-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+.model-c {
+    position: relative;
+    width: 100%;
+    height: 4.7rem;
+    overflow: hidden;
+}
+.canvas {
+    width: 100%;
+    height: 100%;
+}
+.cta-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.det-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.color-sel-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.color-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 29, 31);
+    height: 3rem;
+    border-radius: 2rem;
+}
+.cc-item {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+}
+.size-btn-c {
+    display: flex;
+    align-items: center;
+}
+.size-btn {
+    border-radius: 2rem;
+}
