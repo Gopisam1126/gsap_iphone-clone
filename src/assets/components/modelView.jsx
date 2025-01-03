@@ -1,11 +1,7 @@
-/* eslint-disable react/no-unknown-property */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import { Html, View } from "@react-three/drei";
 import Lights from "../components/lights";
 import "../compStyles/modelView.css";
-import { Suspense, useRef } from "react";
-import { div, log2 } from "three/tsl";
+import { Suspense } from "react";
 import Iphone from "./iPhone";
 function ModelView({
   index,

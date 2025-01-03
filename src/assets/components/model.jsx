@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "../compStyles/model.css";
