@@ -48,6 +48,7 @@
   border-radius: 2rem;
 }
 .cc-item {
+  position: relative;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -55,6 +56,7 @@
   margin-right: 0.5rem;
   list-style: none;
   cursor: pointer;
+  z-index: 10;
 }
 .size-btn-c {
   display: flex;
