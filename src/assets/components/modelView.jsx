@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import { Html, OrbitControls, View } from "@react-three/drei";
 import Lights from "../components/lights";
 import "../compStyles/modelView.css";
 import { Suspense, useEffect } from "react";
 import Iphone from "./iPhone";
-import * as THREE from "three";
 
 function ModelView({
   index,
@@ -44,7 +44,11 @@ function ModelView({
         position={[0, 0, 0]}
       >
         <Suspense fallback={<Html>Loading...</Html>}>
-          <Iphone scale={index === 1 ? [25, 25, 25] : [17, 17, 17]} />
+          <Iphone
+            scale={index === 1 ? [25, 25, 25] : [30, 30, 30]}
+            item={item}
+            size={size}
+          />
         </Suspense>
       </group>
     </View>

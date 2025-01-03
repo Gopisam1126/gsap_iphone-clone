@@ -5,4 +5,5 @@
 .right-t {
   position: relative;
   right: -100%;
+  top: -100%;
 }
