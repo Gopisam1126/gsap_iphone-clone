@@ -1,8 +1,10 @@
-import { Html, View } from "@react-three/drei";
+import { Html, OrbitControls, View } from "@react-three/drei";
 import Lights from "../components/lights";
 import "../compStyles/modelView.css";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import Iphone from "./iPhone";
+import * as THREE from "three";
+
 function ModelView({
   index,
   groupRef,
@@ -12,20 +14,39 @@ function ModelView({
   item,
   size,
 }) {
-  
+  useEffect(() => {
+    if (controlRef.current) {
+      controlRef.current.target.set(0, 0, 0);
+      controlRef.current.update();
+    }
+  }, [controlRef]);
+
   return (
     <View
       index={index}
       id={gsapType}
-      className={`viewport-main ${index === 2} ? 'right-t' : ''`}
+      className={`viewport-main ${index === 2 ? "right-t" : ""}`}
     >
-      <ambientLight intensity={1}/>
-      <directionalLight position={[0, 2, 4]} />
+      <ambientLight intensity={1} />
       <perspectiveCamera makeDefault position={[0, 0, 4]} />
       <Lights />
-      <Suspense fallback={<Html>Loading...</Html>}>
-        <Iphone scale={20} />
-      </Suspense>
+      <OrbitControls
+        makeDefault
+        ref={controlRef}
+        enablePan={false}
+        enableZoom={false}
+        rotateSpeed={0.4}
+        onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}
+      />
+      <group
+        ref={groupRef}
+        name={index === 1 ? "small" : "large"}
+        position={[0, 0, 0]}
+      >
+        <Suspense fallback={<Html>Loading...</Html>}>
+          <Iphone scale={index === 1 ? [25, 25, 25] : [17, 17, 17]} />
+        </Suspense>
+      </group>
     </View>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "../compStyles/model.css";
@@ -8,7 +9,6 @@ import { models, sizes } from "../constants";
 import { useRef } from "react";
 import * as THREE from "three";
 import { View } from "@react-three/drei";
-import { div } from "three/tsl";
 import { Canvas } from "@react-three/fiber";
 
 function Model() {
@@ -79,6 +79,7 @@ function Model() {
                   right: 0,
                   overflow: "hidden",
                 }}
+                eventSource={document.getElementById('root')}
               >
                 <View.Port />
               </Canvas>

@@ -1,9 +1,5 @@
 .hero-main-sec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 83.33%;
+    height: 35rem;
 }
 .hero-main-head {
     display: flex;

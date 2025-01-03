@@ -40,6 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 .progres-container {
   display: flex;
@@ -58,7 +59,7 @@
   height: 0.75rem;
   cursor: pointer;
   background: #e5e7eb;
-  border-radius: 25%;
+  border-radius: 20%;
 }
 .prg-act-btn {
   background: rgba(66, 66, 69, 0.7);

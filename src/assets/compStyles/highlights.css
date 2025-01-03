@@ -17,6 +17,7 @@ body {
     font-weight: 500;
     opacity: 0;
     transform: translateY(70px);
+    color: rgb(189, 189, 189);
 }
 .hl-head {
     display: flex;
