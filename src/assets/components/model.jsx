@@ -10,6 +10,7 @@ import { useRef } from "react";
 import * as THREE from "three";
 import { View } from "@react-three/drei";
 import { div } from "three/tsl";
+import { Canvas } from "@react-three/fiber";
 
 function Model() {
   const [size, setSize] = useState("small");
@@ -68,7 +69,7 @@ function Model() {
 
               {/* canvas */}
 
-              <canvas
+              <Canvas
                 className="canvas"
                 id="canvas"
                 style={{
@@ -81,7 +82,7 @@ function Model() {
                 }}
               >
                 <View.Port />
-              </canvas>
+              </Canvas>
             </div>
 
             <div className="cta-container">

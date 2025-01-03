@@ -9,15 +9,12 @@
   color: rgb(189, 189, 189);
 }
 .model-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 1.25rem;
 }
 .model-c {
   position: relative;
   width: 100%;
-  height: 4.7rem;
+  height: 50rem;
   overflow: hidden;
 }
 .canvas {
